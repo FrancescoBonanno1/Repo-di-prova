@@ -1,5 +1,5 @@
 <?php
-$events = [
+ return [
     [
         'name' => 'Concerto Jazz',
         'image' => 'concerto_jazz.jpg',

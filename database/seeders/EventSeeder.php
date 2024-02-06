@@ -17,14 +17,11 @@ class EventSeeder extends Seeder
     {
         $array_events = config("event");
 
-        foreach ($array_events as $event_item) {
+        foreach($array_events as $event_item) {
             $new_event = new Event();
 
-            $new_event->name = $event_item["name"];
-            $new_event->image= $event_item["image"];
-            $new_event->description = $event_item["description"];
-            $new_event->date = $event_item["date"];
-            $new_event->save();
+           $new_event->fill($event_item);
+           $new_event->save();
         }  
     }
 }

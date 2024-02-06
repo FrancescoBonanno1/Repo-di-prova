@@ -1,6 +1,6 @@
 <?php
 
-$tags = [
+return [
     [
         'hashtag' => '#musica',
         'genre' => 'Musica',

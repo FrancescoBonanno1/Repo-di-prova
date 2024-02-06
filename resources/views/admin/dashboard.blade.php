@@ -18,6 +18,7 @@
                     @endif
 
                     {{ __('You are logged!') }}
+                  {{var_dump ($events)}}
                 </div>
             </div>
         </div>

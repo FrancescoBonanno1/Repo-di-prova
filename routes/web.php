@@ -21,4 +21,11 @@ Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');
 
+Route::get('/event', function(){
+    return view('admin.event');
+});
+Route::get('/tag', function(){
+    return view('admin.tag');
+});
+
 require __DIR__.'/auth.php';

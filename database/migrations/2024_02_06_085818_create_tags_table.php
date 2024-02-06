@@ -13,9 +13,12 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('tags', function (Blueprint $table) {
-            $table->id();
-            $table->timestamps();
+        Schema::create('tags', function (Blueprint $tag) {
+            $tag->id();
+            $tag->string('hashtag');
+            $tag->string('genre');
+            $tag->string('type');
+            $tag->timestamps();
         });
     }
 

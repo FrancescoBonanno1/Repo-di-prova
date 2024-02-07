@@ -10,8 +10,13 @@
       <p class="card-text">{{$evento->description}}</p>
       <strong><span class="card-text">{{$evento->date}}</span></strong>
       <a href="#" class="btn btn-primary">Vedi Dettagli</a>
-      <a href="#" class="btn btn-danger">Cancella Evento</a>
       <a href="#" class="btn btn-warning">Modifica Evento</a>
+      <form action="{{ route('admin.events.destroy', $evento->id) }}" method="POST"
+        class="d-inline-block">
+        @csrf
+        @method('DELETE')
+        <input type="submit" value="Cancella" class="btn btn-danger">
+    </form>
     </div>
   </div>
 </section>

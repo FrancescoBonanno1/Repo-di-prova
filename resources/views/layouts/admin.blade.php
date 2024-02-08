@@ -38,7 +38,7 @@
 
 							 <li class="nav-item">
 								<a class="nav-link text-white {{ Route::currentRouteName() == 'admin.events.index' ? 'bg-secondary' : '' }}" href="{{route('admin.events.index')}}">
-									<i class="fa-solid fa-calendar-alt fa-lg fa-fw"></i> Home
+									<i class="fa-solid fa-calendar-alt fa-lg fa-fw"></i> Events
 								</a>
 							</li>
 
